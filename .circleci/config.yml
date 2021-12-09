@@ -11,12 +11,14 @@ jobs:
           name: Show current branch
           command: echo ${CURRENT_BRANCH}
       - restore_cache:
-          key:
+          keys:
             - app-{{ checksum "package.json" }}
             - app-
       - run:
           name: Install yarn
-          command: npm install -g yarn
+          command: |
+            sudo chown -R ownerName: /usr/local/lib/node_modules
+            npm install -g yarn
       - run:
           name: Install dependencies
           command: npm install
@@ -55,7 +57,7 @@ jobs:
             if ["${CURRENT_BRANCH}" == "main" ]
             then 
               aws --region ${AWS_REGION} s3 sync ~/repo/build s3://${AWS_BUCKET_PROD} --delete
-            elif ["${CURRENT_BRANCH}" == "feature/demo-vehicle"]
+            elif ["${CURRENT_BRANCH}" == "dev"]
             then 
               aws --region ${AWS_REGION} s3 sync ~/repo/build s3://${AWS_BUCKET_DEV} --delete
             fi
@@ -91,7 +93,7 @@ jobs:
             if ["${CURRENT_BRANCH}" == "main" ]
             then 
               aws cloudfront create-invalidation --distribution-id ${PRO_DISTRIBUTION_ID} --paths /\* 
-            elif ["${CURRENT_BRANCH}" == "feature/demo-vehicle"]
+            elif ["${CURRENT_BRANCH}" == "dev"]
             then 
               aws cloudfront create-invalidation --distribution-id ${DEV_DISTRIBUTION_ID} --paths /\*
             fi
@@ -103,15 +105,15 @@ workflow:
           requires:
             - build
           filters:
-            branches: 
-              only: 
-                - feature/demo-vehicle
+            branches:
+              only:
+                - dev
                 - main
       - deploy-to-aws-cloudfront:
           requires:
             - deploy-to-aws-s3
           filters:
-            branches: 
-              only: 
-                - feature/demo-vehicle
+            branches:
+              only:
+                - dev
                 - main
