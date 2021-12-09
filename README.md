@@ -96,8 +96,8 @@ Total: 22 hours.
 
 1. `Enviroment Setup: 3 hours`
 
-- ` Install React + Redux + material UI, and all dependencies`
-- ` Postman API test`
+- Install React + Redux + material UI, and all dependencies
+- Postman API test
 
 2. `Project Structure: 2 hours`
 
