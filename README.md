@@ -6,10 +6,10 @@ A simple React Application displays a list of dealers in a dashboard, including 
 
 - [Quick Start](#quick-start)
 - [Unit Test](#unit-test)
-- [File Structure](#file-structure)
+- [Project Structure](#project-structure)
 - [Time Allocation](#time-allocation)
 - [Resources](#resources)
-- [Improvements](#improvements)
+
 
 ## Quick start
 
