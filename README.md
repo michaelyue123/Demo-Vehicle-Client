@@ -13,8 +13,6 @@ A simple React Application displays a list of dealers in a dashboard, including 
 
 ## Quick start
 
-- Deployed Url: https://d3v9lx709o83s4.cloudfront.net 
-
 - clone the repo: `https://github.com/michaelyue123/Demo-Vehicle-Client.git`
 
 - Navigate to project folder
