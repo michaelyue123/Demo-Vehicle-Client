@@ -13,11 +13,11 @@ A simple React Application displays a list of dealers in a dashboard, including 
 
 ## Quick start
 
-- Public Url: https://d3v9lx709o83s4.cloudfront.net 
+- Deployed Url: https://d3v9lx709o83s4.cloudfront.net 
 
 - [Download from Github](https://github.com/michaelyue123/Accenture_Paginate_Cache/archive/main.zip)
 
-- clone the repo: `git clone https://github.com/michaelyue123/Accenture_Paginate_Cache.git`
+- clone the repo: `https://github.com/michaelyue123/Demo-Vehicle-Client.git`
 
 - Navigate to project folder
   `cd [project folder]`
@@ -71,7 +71,7 @@ Demo-Vehicle
 	│	│	├── Vehicle.tsx
 	│	│	├── VehicleDashboard.tsx
 	│	│	└── tests
-  │ │		├── Vehicle.test.tsx
+  	│       │	  ├── Vehicle.test.tsx
 	│	│	  └── VehicleDashboard.test.tsx
 	│	├── errorPage
 	│	│	└── NotFound.tsx
@@ -86,7 +86,7 @@ Demo-Vehicle
 	├── store
 	│	├── config.ts
  	│	├── helpers.tsx
-  │	├── hook.ts
+        │	├── hook.ts
 	│	└── store.ts
 	├── setupTests.ts
 	└── index.js
