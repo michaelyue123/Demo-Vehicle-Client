@@ -15,8 +15,6 @@ A simple React Application displays a list of dealers in a dashboard, including 
 
 - Deployed Url: https://d3v9lx709o83s4.cloudfront.net 
 
-- [Download from Github](https://github.com/michaelyue123/Accenture_Paginate_Cache/archive/main.zip)
-
 - clone the repo: `https://github.com/michaelyue123/Demo-Vehicle-Client.git`
 
 - Navigate to project folder
@@ -47,7 +45,7 @@ React Testing Library is used in this section.
 click `a` to re-run all test cases
 
 Test cases are listed below. <br><br>
-![Unit Test](https://github.com/michaelyue123/Accenture_Paginate_Cache/blob/main/images/test_cases.png)
+![Unit Test](https://github.com/michaelyue123/Demo-Vehicle/blob/main/images/test_cases.png)
 
 ## Project Structure
 
@@ -94,37 +92,35 @@ Demo-Vehicle
 
 ## Time Allocation
 
-Total: 34 hours.
+Total: 22 hours.
 
-1. `Setup: 3 hours`
+1. `Enviroment Setup: 3 hours`
 
-- Git repo
 - ` Install React + Redux + material UI, and all dependencies`
-- ` Install Enzyme + Enzyme-adapter-react-16 + Jest-enzyme for TypeScript`
 - ` Postman API test`
 
-3. `Structure Planing: 2 hours`
+2. `Project Structure: 2 hours`
 
 - Set up project structure
+- Follow industry standard
 
-5. `CSS styling: 0.5 hours`
+3. `CSS styling: 0.5 hours`
 
-- Responsive to small, medium and large screen on 15-inch MacBook Pro
+4. `Unit test: 3 hours`
 
-6. `Unit test: 3 hours`
+- Use React Testing Library 
+- Follow TDD Methodology
 
-- React Testing Library 
-
-6. `CI/CD`: 10 hours
+5. `CI/CD: 10 hours`
 
 - Write config.yml file 
 - Test CI/CD pipeline on CircleCI
 
-7. `AWS S3 + AWS Cloudfront`: 1 hours
+6. `AWS S3 + AWS Cloudfront: 1 hours`
 
 - Create S3 bucket + Cloudfront for both dev and prod branch
 
-8. `README.md: 2.5 hour`
+7. `README.md: 2.5 hour`
 
 ## Resources
 
